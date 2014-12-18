@@ -19,7 +19,9 @@
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
+#logo{
 
+}
 body{
 	margin: 0;
 	background: url("../images/day-sky.svg");
@@ -89,3 +91,17 @@ body{
 .answer_button:hover{
 	box-shadow: 1px 1px 3px #ccc;
 	}
+#points{
+	width: 200px;
+	margin: 0 auto 30px auto;
+	display: inline;
+	float: right;
+}
+#score{
+	color: #fff;
+	font-family: DK Cool Crayon;
+	font-size: 2rem;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
