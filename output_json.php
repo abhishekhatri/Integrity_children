@@ -2,6 +2,12 @@
 	include("database.init.php");
 	$qid = 1; 	// will send by ashish get or post method
 	
+	if( $_GET["qid"] ){
+		$qid = $_GET["qid"];
+	}else{
+		echo "no data";
+	}
+
 	$outputarray = array();
 	$answer_array = array();
 	
