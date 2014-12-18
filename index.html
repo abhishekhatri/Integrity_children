@@ -9,25 +9,29 @@
 	<script src="build/jquery-1.11.1.min.js"></script>	
 	</head>
 <body>
+<img src="images/logo.png" id="logo" width="220">
 <div id="mainContainer">
+		<div id="points">
+			<img src="images/award.svg" width="50" style="vertical-align: middle">
+			<div id="score">0</div>
+		</div>
 	<div id="question_Title">
 	What will you do when?
 	</div>
 	<div id="question_image">
 	</div>
 	<div id="answer_center">
-	
 		<div id="question">
 		What will you do when your friend is cheating?
 		</div>
 		<div id="answers">
-		<button class="answer_button" type="submit" id="ans0" value=0>I Will Report</button>
-		<button class="answer_button" type="submit" id="ans1" value=1>I Will Report</button>
-		<button class="answer_button" type="submit" id="ans2" value=2>I Will Report</button>
-		<button class="answer_button" id="ans3" type="submit" value=3>I Will Report</button>
+		<button class="answer_button" type="submit" id="ans1" value=0>I Will Report</button>
+		<button class="answer_button" type="submit" id="ans2" value=1>I Will Report</button>
+		<button class="answer_button" type="submit" id="ans3" value=2>I Will Report</button>
+		<button class="answer_button" id="ans4" type="submit" value=3>I Will Report</button>
+		</div>
 	</div>
 </div>
-
 </body>
 
 <script src="build/clippy.js"></script>
@@ -47,6 +51,7 @@
 	});
 	var merlin;
 	clippy.load('Merlin',function(agent){
+	//merlin.moveTo((2*window.innerWidth)/3,window.innerHeight/1.6);
 	merlin=agent;
 	})</script>
 </html>
