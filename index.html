@@ -7,7 +7,6 @@
 	<link media="all" type="text/css" rel="stylesheet" href="css/main.css" >
 	<link rel="stylesheet" type="text/css" href="build/clippy.css" media="all">
 	<script src="build/jquery-1.11.1.min.js"></script>	
-	<script src="js/main.js"></script>
 	</head>
 <body>
 <div id="mainContainer">
@@ -15,7 +14,6 @@
 	What will you do when?
 	</div>
 	<div id="question_image">
-	<img src="images/cheating.jpg">
 	</div>
 	<div id="answer_center">
 	
@@ -23,30 +21,32 @@
 		What will you do when your friend is cheating?
 		</div>
 		<div id="answers">
-		<button class="answer_button" id="ans0">I Will Report</button>
-		<button class="answer_button" id="ans1">I Will Report</button>
-		<button class="answer_button" id="ans2">I Will Report</button>
-		<button class="answer_button" id="ans3">I Will Report</button>
+		<button class="answer_button" type="submit" id="ans0" value=0>I Will Report</button>
+		<button class="answer_button" type="submit" id="ans1" value=1>I Will Report</button>
+		<button class="answer_button" type="submit" id="ans2" value=2>I Will Report</button>
+		<button class="answer_button" id="ans3" type="submit" value=3>I Will Report</button>
 	</div>
 </div>
 
 </body>
 
 <script src="build/clippy.js"></script>
-
+<script src="js/main.js"></script>
 <script type="text/javascript">
 	var teacher;
     clippy.load('Genius', function(agent){
 	teacher=agent;
 	//agent.show();
-	agent.moveTo((window.innerWidth)/1.6,(window.innerHeight)/2.4);
+	agent.moveTo(window.innerWidth/4,window.innerHeight/1.6);
 	//agent.show();
 	agent.play("Greeting");
 	agent.speak('Greetings! I am your Tutor! Mr.E');
-	agent.speak("I'll be guiding you through this tour!");
 	agent.speak("Let's start with a question");
-	agent.play("CheckingSomething");
 	
 	console.log(agent.animations());
-	});</script>
+	});
+	var merlin;
+	clippy.load('Merlin',function(agent){
+	merlin=agent;
+	})</script>
 </html>
