@@ -6,8 +6,8 @@
 	<title>Integrity Test</title>
 	<link media="all" type="text/css" rel="stylesheet" href="css/main.css" >
 	<link rel="stylesheet" type="text/css" href="build/clippy.css" media="all">
-
 	<script src="build/jquery-1.11.1.min.js"></script>	
+	<script src="js/main.js"></script>
 	</head>
 <body>
 <div id="mainContainer">
@@ -23,10 +23,10 @@
 		What will you do when your friend is cheating?
 		</div>
 		<div id="answers">
-		<button class="answer_button" id="ans1">I Will Report my family and friends</button>
+		<button class="answer_button" id="ans0">I Will Report</button>
+		<button class="answer_button" id="ans1">I Will Report</button>
 		<button class="answer_button" id="ans2">I Will Report</button>
 		<button class="answer_button" id="ans3">I Will Report</button>
-		<button class="answer_button" id="ans4">I Will Report</button>
 	</div>
 </div>
 
@@ -39,7 +39,7 @@
     clippy.load('Genius', function(agent){
 	teacher=agent;
 	//agent.show();
-	agent.moveTo(840,250);
+	agent.moveTo((window.innerWidth)/1.6,(window.innerHeight)/2.4);
 	//agent.show();
 	agent.play("Greeting");
 	agent.speak('Greetings! I am your Tutor! Mr.E');
