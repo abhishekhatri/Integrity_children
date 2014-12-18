@@ -1,4 +1,55 @@
 body{
 	margin: 0;
-	background: url('');
+	background: #344;
+}
+#mainContainer{
+	border: 1px solid #fff;
+	width: 70%;
+	margin: 50px auto;
+	height: 500px;
+}
+#question_Title{
+	border: 1px solid #fff;
+	width: 40%;
+	margin: 30px auto;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 2rem;
+	text-align: center;
+}
+#question_image{
+	border: 1px solid #fff;
+	width: 60%;
+	margin: 30px auto;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 2rem;
+	text-align: center;
+}
+#answer_center{
+	border: 1px solid #fff;
+	width: 60%;
+	margin: 30px auto;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 2rem;
+	text-align: center;
+}
+#question{
+	border: 1px solid #fff;
+	width: 40%;
+	margin: 30px auto;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 1rem;
+	text-align: center;
+}
+.answer_button{
+	border: 1px solid #fff;
+	display: inline;
+	background-color: #344;
+	font-size: 1rem;
+	color: #fff;
+	cursor: hand;
+	cursor: pointer;
 }
