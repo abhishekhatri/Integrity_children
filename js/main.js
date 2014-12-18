@@ -1,6 +1,7 @@
 var correctAnswerIndex=0;
 var score=0;
 var scoreadd=2;
+var scoredisplay=0;
 var hint;
 var arr;
 var qid;
@@ -16,7 +17,8 @@ $(".answer_button").click(function(){
 		score+=scoreadd;
 		//alert(score);
 		scoreadd=2;
-		$("#score").text(score);
+		scoredisplay+=2;
+		$("#score").text(score+"/"+scoredisplay);
 		teacher.play("Congratulate");
 		teacher.speak("You did the right thing");
 		loader(qid);
@@ -59,10 +61,10 @@ function loader(qid){
 	hint=data.hint;
 	arr=data;	
 	$("#question").text(data.output);
-	$("#ans0").text(data.option[0]);
-	$("#ans1").text(data.option[1]);
-	$("#ans2").text(data.option[2]);
-	$("#ans3").text(data.option[3]);
+	$("#ans1").text(data.option[0]);
+	$("#ans2").text(data.option[1]);
+	$("#ans3").text(data.option[2]);
+	$("#ans4").text(data.option[3]);
 	}	
 	});
 
