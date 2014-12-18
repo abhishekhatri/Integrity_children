@@ -3,9 +3,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title></title>
+	<title>Integrity Test</title>
 	<link media="all" type="text/css" rel="stylesheet" href="css/main.css" >
-</head>
+	<link rel="stylesheet" type="text/css" href="build/clippy.css" media="all">
+
+	<script src="build/jquery-1.11.1.min.js"></script>	
+	</head>
 <body>
 <div id="mainContainer">
 	<div id="question_Title">
@@ -15,13 +18,35 @@
 	<img src="images/cheating.jpg">
 	</div>
 	<div id="answer_center">
+	
 		<div id="question">
 		What will you do when your friend is cheating?
 		</div>
 		<div id="answers">
-		<button class="answer_button">I Will Report</button>
-		<button class="answer_button">I Will Report</button>
-		<button class="answer_button">I Will Report</button>
-		<button class="answer_button">I Will Report</button>
+		<button class="answer_button" id="ans1">I Will Report</button>
+		<button class="answer_button" id="ans2">I Will Report</button>
+		<button class="answer_button" id="ans3">I Will Report</button>
+		<button class="answer_button" id="ans4">I Will Report</button>
 	</div>
 </div>
+
+</body>
+
+<script src="build/clippy.js"></script>
+
+<script type="text/javascript">
+	var teacher;
+    clippy.load('Genius', function(agent){
+	teacher=agent;
+	//agent.show();
+	agent.moveTo(840,250);
+	//agent.show();
+	agent.play("Greeting");
+	agent.speak('Greetings! I am your Tutor! Mr.E');
+	agent.speak("I'll be guiding you through this tour!");
+	agent.speak("Let's start with a question");
+	agent.play("CheckingSomething");
+	
+	console.log(agent.animations());
+	});</script>
+</html>
