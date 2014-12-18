@@ -42,16 +42,16 @@ body{
 	text-align: center;
 	height: 100%;
 }
-#question_image{
-	border: 1px solid #fff;
-	width: 60%;
+/*#question_image{
+	width: 100%;
+	height: 200px;
 	margin: 30px auto;
 	color: #fff;
-	font-family: LittleMissPriss;
+	background: url('../images/class.jpg') no-repeat -400px -200px;
 	font-size: 2rem;
 	text-align: center;
 	display: block;
-}
+}*/
 #answer_center{
 	border: 1px solid transparent;
 	width: 600px;
