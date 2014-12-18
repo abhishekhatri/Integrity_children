@@ -14,8 +14,9 @@ $(".answer_button").click(function(){
 	if(parseInt(this.id.slice(3))==correctAnswerIndex){
 		qid++;
 		score+=scoreadd;
-		alert(score);
+		//alert(score);
 		scoreadd=2;
+		$("#score").text(score);
 		teacher.play("Congratulate");
 		teacher.speak("You did the right thing");
 		loader(qid);
