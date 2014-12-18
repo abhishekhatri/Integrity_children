@@ -28,7 +28,7 @@ body{
 }
 #mainContainer{
 	width: 70%;
-	margin: 50px auto;
+	margin: -80px auto 10px auto;
 	background: rgba(0, 104, 91, 0.6);
 	border-radius: 2px;
 	overflow: hidden;
@@ -63,7 +63,7 @@ body{
 	font-size: 2rem;
 	text-align: center;
 	background: url('../images/chalkboardg.png') no-repeat;
-	height: 450px;
+	background-size: 100%;
 	vertical-align: middle;
 	padding: 0 40px;
 }
